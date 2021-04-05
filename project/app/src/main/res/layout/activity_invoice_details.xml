@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="100dp"
+    tools:context=".tutor.InvoiceDetails">
+
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="25dp"
+            android:fontFamily="@font/almendra_sc"
+            android:gravity="center"
+            android:padding="3dip"
+            android:paddingLeft="5dip"
+            android:text="Fees Charged :"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/originalfees"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:padding="3dip"
+            android:textColor="#009688"
+            android:textSize="16sp" />
+    </TableRow>
+
+
+    <TableRow>
+
+        <TextView
+            android:layout_height="25dp"
+            android:fontFamily="@font/almendra_sc"
+            android:gravity="center"
+            android:padding="3dip"
+            android:paddingLeft="5dip"
+            android:text="Discount :"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/discount"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:padding="3dip"
+            android:textColor="#009688"
+            android:textSize="16sp" />
+    </TableRow>
+    <TableRow>
+
+        <TextView
+            android:layout_height="25dp"
+            android:fontFamily="@font/almendra_sc"
+            android:gravity="center"
+            android:padding="3dip"
+            android:paddingLeft="5dip"
+            android:text="Paid Amount :"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/feespaid"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:padding="3dip"
+            android:textColor="#009688"
+            android:textSize="16sp" />
+    </TableRow>
+
+
+</TableLayout>

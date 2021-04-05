@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:fillViewport="true"
+    tools:context=".grocery.ShowCompletedOrder">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".grocery.ShowCompletedOrder">
+
+        <ImageView
+            android:id="@+id/tutorbackimage"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/chess"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            ></ImageView>
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/ubuntu_medium"
+            android:id="@+id/pending"
+            android:layout_below="@+id/tutorbackimage"
+            android:text="You have experts pending for your help! . Please tap the button at the end of this page!"
+            android:textColor="#4CAF50"
+            android:visibility="gone"
+
+            android:textSize="16sp" />
+
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_below="@+id/pending"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center_vertical"
+                    android:padding="3dip"
+                    android:paddingLeft="5dip"
+                    android:text="OrderId :"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tutororderid"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:inputType="textMultiLine"
+                    android:padding="3dip"
+                    android:textColor="#009688"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center_vertical"
+                    android:padding="3dip"
+                    android:paddingLeft="5dip"
+                    android:text="Preferred Price :"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/preferredprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:inputType="textMultiLine"
+                    android:padding="3dip"
+                    android:textColor="#009688"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center_vertical"
+                    android:padding="3dip"
+                    android:paddingLeft="5dip"
+                    android:text="Mode :"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/preferredmode"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:inputType="textMultiLine"
+                    android:padding="3dip"
+                    android:textColor="#009688"
+                    android:textSize="16sp" />
+            </TableRow>
+
+
+            <TableRow
+               >
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center_vertical"
+                    android:padding="3dip"
+                    android:paddingLeft="5dip"
+                    android:text="Your Level :"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/studentlevel"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:inputType="textMultiLine"
+                    android:padding="3dip"
+                    android:textColor="#009688"
+                    android:textSize="16sp" />
+            </TableRow>
+
+
+
+
+
+
+        </TableLayout>
+
+
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/main_screen"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content" android:layout_below="@+id/tableLayout">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/desc"
+                android:fontFamily="@font/almendra_sc"
+                android:gravity="center"
+                android:padding="3dip"
+                android:paddingLeft="5dip"
+                android:text="Your Description :"
+                android:textColor="#000"
+                android:textSize="16sp"></TextView>
+            <LinearLayout
+                android:id="@+id/bhai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/desc"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:id="@+id/edittextdescripiton"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerHorizontal="true"
+
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/download"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="Loading your Description..."
+                    android:inputType="textAutoCorrect|textMultiLine|textAutoComplete"
+                    android:maxWidth="200dp"
+                    android:maxLength="1500"
+                    android:padding="4dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/seeexpertquotes"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_centerHorizontal="true"
+                         android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/bg_btn_grocery"
+                    android:fontFamily="@font/ubuntu_medium"
+                    android:gravity="center"
+                    android:text="See interested Experts"
+                    android:textColor="#FFEB3B"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

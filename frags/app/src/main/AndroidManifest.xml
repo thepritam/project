@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.ServicePortal">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TutorExperienceActivity"></activity>
+        <activity android:name=".TutorChoiceActivity" />
+        <activity android:name=".TutorInvoiceDetActivity" />
+        <activity android:name=".TutorReachedLocActivity" />
+        <activity android:name=".TutorAssignedDetailsActivity" />
+        <activity android:name=".ViewTutorOrderActivity" />
+        <activity android:name=".RiderQRScan" />
+        <activity android:name=".RiderQRGen" />
+        <activity android:name=".RiderDetailsActivity" />
+        <activity android:name=".TutorQuotationActivity" />
+        <activity android:name=".TutorDetailsActivity" />
+        <activity android:name=".ConfirmGroceryWorkDetails" />
+        <activity android:name=".GroceryWorkDetails" />
+        <activity android:name=".TutorImageUploadActivity" />
+        <activity
+            android:name=".DetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ValidityCheck"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".IntroActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+
+        <service
+            android:name=".AvailService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".ReachedQRGen"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".TrackerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".RegisterImageUploadActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".OTPActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustPan" />
+        <activity
+            android:name=".StartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UserReachedDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ShowonMap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ConfirmDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AssignedWorkDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".CompletedWorksDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AllWorkDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".TrackerService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAEkuVYTWEBDKHn4xM3MQPvjBwwICwH1FQ" />
+    </application>
+
+</manifest>

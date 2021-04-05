@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout tools:context=".grocery.grocerydisplay"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#F0F3F4"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shimmer="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/locationtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="8dp"
+        android:drawableLeft="@drawable/ic_location_on_black_24dp"
+        android:gravity="center_vertical"
+        android:text="Your location"
+        android:textColor="#000"
+        android:textSize="14sp"
+        android:textStyle="bold|italic"></TextView>
+
+    <TextView
+        android:id="@+id/addressshow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical"
+        android:drawableRight="@drawable/ic_edit_location_black_24dp"
+        android:paddingLeft="5dp"
+        android:text="Your location \n apna \n hvv "
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_below="@+id/addressshow"
+        android:layout_height="5dp"
+        android:id="@+id/dotted"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/dotted"
+        android:layerType="software" />
+
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/dotted"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@drawable/editext_border"
+        android:drawableLeft="@drawable/ic_search_black_24dp"
+        android:gravity="center"
+        android:hint=" Search for Shops "
+        android:paddingLeft="5dp"
+        android:visibility="gone"
+        shimmer:layout_constraintLeft_toLeftOf="parent"
+        shimmer:layout_constraintRight_toRightOf="parent"
+        shimmer:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/editTextSearch"
+        android:layout_height="match_parent">
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_view_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+
+        android:orientation="vertical"
+        shimmer:shimmer_duration="2000"
+        tools:ignore="MissingConstraints">
+
+        <!-- Adding 7 rows of placeholders -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <include layout="@layout/data_placeholder_layout" />
+            <include layout="@layout/data_placeholder_layout" />
+            <include layout="@layout/data_placeholder_layout" />
+            <include layout="@layout/data_placeholder_layout" />
+            <include layout="@layout/data_placeholder_layout" />
+            <include layout="@layout/data_placeholder_layout" />
+            <include layout="@layout/data_placeholder_layout" />
+        </LinearLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+<androidx.recyclerview.widget.RecyclerView
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/recyclerview"
+    android:layout_marginTop="10dp"
+    android:visibility="invisible"
+   android:layout_marginBottom="58dp"
+android:layout_width="match_parent"
+android:layout_height="match_parent"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottomnavshimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:orientation="horizontal">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            android:background="@drawable/imagesslider"
+            shimmer:itemIconTint="@drawable/selector1"
+            shimmer:itemTextColor="@drawable/selector1"
+
+            shimmer:menu="@menu/bottom_navigation" />
+    </LinearLayout>
+
+
+    </RelativeLayout>

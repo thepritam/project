@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">project</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="google_maps_api">AIzaSyA0P1atIVNPhrrSIbyvhvrQxHkgcO3gWvY</string>
+</resources>

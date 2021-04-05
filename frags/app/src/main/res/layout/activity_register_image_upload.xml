@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_bg"
+    android:padding="0dp"
+    tools:context=".RegisterImageUploadActivity">
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="69dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/logoseparate" />
+
+    <RelativeLayout
+        android:id="@+id/layout_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnChooseavatar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:shadowColor="#000000"
+            android:text="Choose Profile Picture"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imgViewAvatar"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/common_google_signin_btn_text_light_default" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_aadhar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="350dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnChooseAadhar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:text="Choose Aadhar Card Picture"
+            android:textSize="18sp" />
+
+
+        <ImageView
+            android:id="@+id/imgViewAadhar"
+            android:layout_width="match_parent"
+            android:layout_height="116dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/common_google_signin_btn_text_light_default" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnUpload"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/edittext_bg"
+        android:text="Upload"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        tools:layout_marginEnd="50dp"
+        tools:layout_marginStart="50dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="9dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="UPLOAD"
+        android:textColor="#000000"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/ubuntu_medium"
+        android:text="IMAGES"
+        android:textColor="#000000"
+        android:textSize="36sp" />
+
+</RelativeLayout>

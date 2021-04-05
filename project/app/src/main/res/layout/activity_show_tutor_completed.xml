@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:fillViewport="true"
+    tools:context=".grocery.ShowCompletedOrder">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".tutor.ShowTutorCompleted">
+
+        <ImageView
+            android:id="@+id/tutorbackimage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/tutor1"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            ></ImageView>
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/ubuntu_medium"
+            android:id="@+id/pending"
+            android:layout_below="@+id/tutorbackimage"
+            android:text="You have experts pending for your help! . Please tap the button at the end of this page!"
+            android:textColor="#4CAF50"
+            android:visibility="gone"
+
+            android:textSize="16sp" />
+
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_below="@+id/pending"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center_vertical"
+                    android:padding="3dip"
+                    android:paddingLeft="5dip"
+                    android:text="OrderId :"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tutororderid"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:inputType="textMultiLine"
+                    android:padding="3dip"
+                    android:textColor="#009688"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center_vertical"
+                    android:padding="3dip"
+                    android:paddingLeft="5dip"
+                    android:text="Teacher Name :"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/assteachername"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:inputType="textMultiLine"
+                    android:padding="3dip"
+                    android:textColor="#009688"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow>
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center_vertical"
+                    android:padding="3dip"
+                    android:paddingLeft="5dip"
+                    android:text="Contact Number :"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/teachercontactnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:inputType="textMultiLine"
+                    android:padding="3dip"
+                    android:textColor="#009688"
+                    android:textSize="16sp" />
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/rowboard"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center_vertical"
+                    android:padding="3dip"
+                    android:paddingLeft="5dip"
+                    android:text="Board :"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/studentboard"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:inputType="textMultiLine"
+                    android:padding="3dip"
+                    android:textColor="#009688"
+                    android:textSize="16sp" />
+            </TableRow>
+
+
+
+            <TableRow
+                android:id="@+id/rowclass"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center_vertical"
+                    android:padding="3dip"
+                    android:paddingLeft="5dip"
+                    android:text="Class Chosen :"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/studentclass"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:inputType="textMultiLine"
+                    android:padding="3dip"
+                    android:textColor="#009688"
+                    android:textSize="16sp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/rowcompetitive"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center_vertical"
+                    android:padding="3dip"
+                    android:paddingLeft="5dip"
+                    android:text="Competitve Exam/s :"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/studentexams"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center_vertical"
+                    android:inputType="textMultiLine"
+                    android:padding="3dip"
+                    android:textColor="#009688"
+                    android:textSize="16sp" />
+            </TableRow>
+
+
+
+
+
+
+
+
+
+
+
+        </TableLayout>
+
+
+        <TableLayout
+            android:id="@+id/displayitemslayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tableLayout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center">
+
+            <TableRow
+                android:id="@+id/tableRow"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.33"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center_vertical"
+                    android:text="Subjects You Needed Help"
+                    android:textColor="#009688"
+                    android:textSize="18sp" />
+
+
+            </TableRow>
+
+        </TableLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_screen"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="200dp" android:layout_below="@+id/displayitemslayout">
+
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_medium"
+                android:id="@+id/invoicebtn"
+                android:text="View Invoice"
+                android:gravity="center"
+                android:background="@drawable/bg_btn_grocery"
+                android:layout_centerHorizontal="true"
+                android:textColor="#FFEB3B"
+                android:textSize="16sp" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

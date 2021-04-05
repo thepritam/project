@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/grad_bg"
+    android:layout_gravity="center"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/chkconfirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:gravity="center"
+        android:text="Your Request is on the way....\n We will Notify you once requested Shop have given their quotaion...\n continue Shopping ....\n"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:textSize="20dp" />
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="215dp"
+        android:background="@drawable/rounded_btn"
+        android:text="Go" />
+
+    <LinearLayout
+        android:id="@+id/bottomnavshimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            android:background="@drawable/imagesslider"
+            app:itemIconTint="@drawable/selector1"
+            app:itemTextColor="@drawable/selector1"
+
+            app:menu="@menu/bottom_navigation" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

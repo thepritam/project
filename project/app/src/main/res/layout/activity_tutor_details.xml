@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".tutor.TutorDetails">
+
+
+
+
+<ScrollView
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:layout_alignParentTop="true"
+android:layout_alignParentLeft="true"
+    >
+
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/tutorlinear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp">
+            <Button
+                android:id="@+id/button_tutor_video"
+
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bg_et"
+                android:text="Press the Button For Demo lecture"
+                android:textColor="@drawable/md_light_blue_600" />
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+
+
+    <VideoView
+        android:id="@+id/videoview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="8dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="4:3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="100dp"
+                android:fontFamily="@font/almendra_sc"
+                android:gravity="center"
+                android:padding="3dip"
+                android:paddingLeft="5dip"
+                android:text="NAME"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tutorname"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:autoSizePresetSizes="@array/autosize_text_sizes"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:padding="3dip"
+                android:textSize="20sp"
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="100dp"
+                android:fontFamily="@font/almendra_sc"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Experience"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+
+            <TextView
+                android:id="@+id/tutorphone"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:autoSizePresetSizes="@array/autosize_text_sizes"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:padding="3dip"
+                android:textSize="20sp"
+
+                app:autoSizeStepGranularity="2sp"
+                app:autoSizeTextType="uniform" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+        <TableRow>
+        <TextView
+            android:layout_height="100dp"
+            android:fontFamily="@font/almendra_sc"
+            android:gravity="center"
+            android:padding="3dip"
+            android:paddingLeft="5dip"
+            android:text="EXPECTED FEES"
+            android:textColor="#000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tutorprice"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:autoSizePresetSizes="@array/autosize_text_sizes"
+            android:gravity="center"
+            android:inputType="textMultiLine"
+            android:padding="3dip"
+            android:textSize="20sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform" />
+    </TableRow>
+    <View
+        android:layout_height="2dip"
+        android:background="#FF909090" />
+
+
+
+    </TableLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/parent_linear_layouttutor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="645dp"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+             android:layout_alignBottom="@+id/tutorlinear"
+            android:orientation="vertical"
+            android:layout_alignParentEnd="true">
+
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="30dp"
+                app:itemIconTint="@drawable/selector1"
+                app:itemTextColor="@drawable/selector1"
+                app:menu="@menu/bottom_navigation" />
+        </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+
+
+</ScrollView>
+</RelativeLayout>

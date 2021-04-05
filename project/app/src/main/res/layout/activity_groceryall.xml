@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".grocery.groceryall"
+    android:background="@drawable/grad_bg1">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="6dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+                    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/checkBox1"
+                        style="@android:style/Widget.Material.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="54dp"
+                        android:text="Select this to add items to cart"
+                        android:textColor="#9C27B0"
+                        android:textStyle="bold|italic" />
+
+                    <RadioButton
+                        android:id="@+id/checkBox2"
+                        style="@android:style/Widget.Material.CompoundButton.CheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Select this to upload your list"
+                        android:textColor="#9C27B0"
+                        android:textStyle="bold|italic" />
+                    </RadioGroup>
+
+
+
+<!--                    <Button-->
+<!--                        android:id="@+id/select_button_grocery"-->
+<!--                        android:layout_width="80dp"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:background="@drawable/bg_et"-->
+<!--                        android:gravity="center|center_horizontal"-->
+<!--                        android:paddingLeft="5dp"-->
+<!--                        android:shadowColor="#172C1709"-->
+<!--                        android:shadowDx="0"-->
+<!--                        android:shadowDy="0"-->
+<!--                        android:shadowRadius="50"-->
+<!--                        android:text="press to Choose"-->
+<!--                        android:textColor="#000"-->
+<!--                        android:textSize="10sp"-->
+<!--                        android:textStyle="bold">-->
+
+<!--                    </Button>-->
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="230dp"
+
+                    android:orientation="horizontal"
+                    android:visibility="invisible">
+
+                    <LinearLayout
+                        android:id="@+id/parent_linear_layoutcamera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageButton
+                            android:id="@+id/photoupload"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+
+                            android:background="@drawable/ic_camera_alt_black_24dp"
+                            android:hint="Click to Capture the Photo"
+                            android:text="Capture Photo" />
+
+                        <!--                    <TextView-->
+                        <!--                        android:id="@+id/imageDetails"-->
+                        <!--                        android:layout_below="@+id/message"-->
+                        <!--                        android:layout_width="wrap_content"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_marginTop="5dp"-->
+                        <!--                        android:layout_marginLeft="20dp"-->
+                        <!--                        />-->
+
+                        <TextView
+                            android:id="@+id/message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/photoupload"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="Click on button to capture image"
+                            android:textColor="#9C27B0"
+                            android:textSize="10dp" />
+
+                        <ImageButton
+                            android:id="@+id/btnStartgrocery"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circleimage"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:visibility="invisible" />
+
+                        <TextView
+                            android:id="@+id/clicktoenlarge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="8dp"
+                            android:text="Click to Enlarge"
+                            android:visibility="gone"
+                            android:textColor="#9C27B0"></TextView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="55dp">
+
+                        <ImageView
+                            android:id="@+id/showImg"
+                            android:foregroundGravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="300dp"
+                            android:layout_gravity="center"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+
+
+
+                            />
+                    </LinearLayout>
+                </FrameLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/button_layout_grocery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="395dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <Button
+                        android:id="@+id/add_field_button"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="45dp"
+                        android:background="@drawable/bg_et"
+                        android:onClick="onAddField"
+                        android:paddingLeft="5dp"
+                        android:shadowColor="#172C1709"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="50"
+                        android:text="Add ITEM"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/parent_linear_layoutgrocery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="515dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/layout_to_hide"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal"
+                        android:visibility="invisible">
+
+
+                        <EditText
+                            android:id="@+id/edittextgrocey"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:hint="enter Item name"
+                            android:inputType="text" />
+
+                        <EditText
+                            android:id="@+id/edittextgroceyno"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:gravity="center"
+                            android:hint="enter item amount"
+                            android:inputType="text" />
+
+                        <Button
+                            android:id="@+id/delete_button"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/ic_delete"
+                            android:onClick="onDelete" />
+
+                        <Button
+                            android:id="@+id/select_button"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/correctimage"
+                            android:onClick="onSelect" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/button_grocery_confirm"
+
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="35dp"
+                            android:background="@drawable/bg_et"
+                            android:enabled="false"
+                            android:text="Confirm"
+                            android:textColor="#000"
+                            android:visibility="invisible" />
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/bottomnavshimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            android:background="@color/transparent"
+            app:itemIconTint="@drawable/selector1"
+            app:itemTextColor="@drawable/selector1"
+
+            app:menu="@menu/bottom_navigation" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
+    tools:context=".tutor.ConfirmTutorActivity">
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/ubuntu_medium"
+        android:id="@+id/pending"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="You have experts pending for your help! . Please tap the button at the end of this page!"
+        android:textColor="#4CAF50"
+
+
+        android:textSize="16sp" />
+    <ImageView
+        android:layout_below="@+id/pending"
+        android:id="@+id/tutorbackimage"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/mainpictutor"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        ></ImageView>
+
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_below="@+id/tutorbackimage"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+
+        <TableRow>
+            <TextView
+                android:id="@+id/textViewshowboard"
+                android:fontFamily="@font/almendra_sc"
+                android:gravity="center_vertical"
+                android:padding="3dip"
+                android:paddingLeft="5dip"
+                android:text="Board :"
+                android:textColor="#000"
+                android:textSize="16sp"
+                android:layout_width="wrap_content"
+
+                android:visibility="visible" />
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:padding="3dip"
+                android:textColor="#009688"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="25dp"
+                android:id="@+id/textView7"
+                android:fontFamily="@font/almendra_sc"
+                android:gravity="center_vertical"
+                android:padding="3dip"
+                android:paddingLeft="5dip"
+                android:text="Class :"
+                android:textColor="#000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/useremail"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:padding="3dip"
+                android:textColor="#009688"
+                android:textSize="16sp" />
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+                android:layout_height="25dp"
+                android:id="@+id/textView8"
+                android:fontFamily="@font/almendra_sc"
+                android:gravity="center_vertical"
+                android:padding="3dip"
+                android:paddingLeft="5dip"
+                android:text="Stream :"
+                android:textColor="#000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/userphone"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:padding="3dip"
+                android:textColor="#009688"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+
+
+        </TableRow>
+
+
+        <TableRow
+            >
+
+            <TextView
+                android:layout_height="25dp"
+                android:id="@+id/textView9"
+                android:fontFamily="@font/almendra_sc"
+                android:gravity="center_vertical"
+                android:padding="3dip"
+                android:paddingLeft="5dip"
+                android:text="Subjects :"
+                android:textColor="#000"
+                android:textSize="16sp" />
+            <TextView
+                android:id="@+id/confirmdetails"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:gravity="center_vertical"
+                android:inputType="textMultiLine"
+                android:padding="3dip"
+                android:textColor="#009688"
+                android:textSize="16sp" />
+
+
+
+        </TableRow>
+
+
+
+
+
+
+    </TableLayout>
+
+
+
+
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:orientation="vertical"
+       android:layout_below="@+id/tableLayout"
+       android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/fees"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:hint="Please Write your affordable fees"
+        android:inputType="number"
+        android:textColor="#000">    </EditText>
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_marginLeft="30dp"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center" />
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/buttontutorpay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="107dp"
+        android:text="Confirm Tutor" />
+   </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:itemIconTint="@drawable/selector1"
+        app:itemTextColor="@drawable/selector1"
+        app:menu="@menu/bottom_navigation" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

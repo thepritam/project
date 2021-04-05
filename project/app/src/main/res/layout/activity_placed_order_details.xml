@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:layout_weight="1"
+    android:fillViewport="true"
+    tools:context=".grocery.PlacedOrderDetails">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".grocery.PlacedOrderDetails">
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/google_map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        tools:context=".MapsActivity" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayoutridermap"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/google_map"
+        android:stretchColumns="1"
+        android:visibility="visible"
+        android:gravity="center"
+
+
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_height="2dip"
+            android:background="#474040" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="25dp"
+                android:fontFamily="@font/almendra_sc"
+                android:gravity="center"
+                android:padding="3dip"
+                android:paddingLeft="5dip"
+                android:text="NAME"
+                android:textColor="#673AB7"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/ridername"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:padding="3dip"
+                android:textColor="#3F51B5"
+                android:textSize="20sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+        <TableRow>
+
+            <TextView
+                android:layout_height="25dp"
+                android:fontFamily="@font/almendra_sc"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Phone"
+                android:textColor="#3F51B5"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/riderphone"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:gravity="center"
+                android:inputType="textMultiLine"
+                android:padding="3dip"
+                android:textColor="#3F51B5"
+
+                android:textSize="20sp" />
+        </TableRow>
+
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+        <TableRow>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:fontFamily="@font/almendra_sc"
+                android:gravity="center"
+                android:padding="3dip"
+                android:text="Rating"
+                android:textColor="#2196F3"
+                android:textSize="16sp" />
+
+            <RatingBar
+                android:id="@+id/ratingBarrider"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:clickable="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:isIndicator="true"
+                android:theme="@style/RatingBar" />
+        </TableRow>
+        <View
+            android:layout_height="2dip"
+            android:background="#FF909090" />
+
+
+
+
+</TableLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+
+        android:id="@+id/mapgroerylayout"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tableLayoutridermap">
+
+            <Button
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="200dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/OrderSummarybtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_btn_grocery"
+                android:text="Order Summary"
+                ></Button>
+
+
+            <Button
+                android:layout_marginLeft="70dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/qrcodebtn"
+                android:layout_height="50dp"
+                android:layout_width="250dp"
+                android:background="@drawable/bg_btn_grocery"
+                android:text="Press here when Rider Reaches"
+                ></Button>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+</ScrollView>

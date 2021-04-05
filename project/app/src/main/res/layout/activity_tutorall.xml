@@ -1,0 +1,614 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:id="@+id/design"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        tools:context=".tutor.tutorall"
+        tools:ignore="MissingConstraints">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <ImageView
+                android:id="@+id/clover"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="32dp"
+                android:elevation="6dp"
+                android:src="@drawable/logoseparate"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/textsplash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="300dp"
+                android:elevation="6dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Welcome "
+                    android:textColor="#FFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textviewname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+
+                    android:textColor="#FFF"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/texthome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="28dp"
+                android:elevation="6dp"
+                android:gravity="left"
+                android:orientation="vertical"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="project"
+                        android:textColor="#FFF"
+                        android:textStyle="bold"
+                        android:textSize="24sp" />
+
+                    <Button
+                        android:id="@+id/logout1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="150dp"
+                        android:background="@color/transparent"
+                        android:text="Logout"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:textStyle="bold|italic"></Button>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Where Servicemen meets Customer"
+                    android:textColor="#FFF"
+                    android:textStyle="italic"
+                    android:textSize="16sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="150dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Education"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="54dp"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold|italic" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get to Learn from Our Professionals"
+                    android:textColor="#000"
+                    android:textSize="12sp"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/menus"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="200dp"
+                android:elevation="6dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.726"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:id="@+id/buttontutororg"
+                            android:layout_width="140dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="5dp"
+                            android:layout_marginBottom="4dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/tutor1"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Tutor"
+                            android:textColor="#0E1843"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:text="Sports"
+                        android:layout_marginLeft="54dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#000"
+                        android:textStyle="bold|italic">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Get to learn from Our  trainer"
+                        android:textColor="#000"
+                        android:textStyle="bold|italic">
+
+                    </TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:id="@+id/buttonchess"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="fitXY"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/chess" >
+
+                        </ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chess"
+                            android:textColor="#0E1843"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:id="@+id/buttonbadminton"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="fitXY"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/badminton" >
+                        </ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Badminton"
+                            android:textColor="#0E1843"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:id="@+id/buttontt"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="fitXY"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/table" >
+
+                        </ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Table Tennis"
+                            android:textColor="#0E1843"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:id="@+id/buttonlt"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="fitXY"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/longt" >
+
+                        </ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Long Tennis"
+
+                            android:textColor="#0E1843"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Fitness Trainor"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:layout_marginLeft="54dp"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold|italic" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get Your Body In Shape "
+                        android:textColor="#000"
+                        android:textSize="12sp"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:id="@+id/buttonfitness"
+                            android:layout_width="140dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="5dp"
+                            android:layout_marginBottom="4dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/personaltrainer"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fitness Trainor"
+                            android:textColor="#0E1843"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:text="Music"
+                        android:layout_marginLeft="54dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#000"
+                        android:textStyle="bold|italic">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Get to learn Music from The Professonal"
+                        android:textColor="#000"
+                        android:textStyle="bold|italic">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="50dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:id="@+id/buttonsinging"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/singteacher" >
+
+                        </ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Voice"
+                            android:textColor="#0E1843"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:layout_width="100dp"
+                            android:id="@+id/buttonmusic"
+                            android:layout_height="70dp"
+                            android:layout_margin="5dp"
+                            android:layout_marginBottom="4dp"
+                            android:scaleType="fitCenter"
+                            android:adjustViewBounds="true"
+                            android:src="@drawable/instru" >
+
+                        </ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Instruments"
+
+                            android:textColor="#0E1843"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:gravity="center_vertical"
+                        android:text="Art"
+                        android:layout_marginLeft="54dp"
+                        android:layout_marginRight="10dp"
+                        android:textColor="#000"
+                        android:textStyle="bold|italic">
+
+                    </TextView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Get to learn Drawing from The Experts"
+                        android:textColor="#000"
+                        android:textStyle="bold|italic">
+
+                    </TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="62dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+
+                        <ImageButton
+                            android:id="@+id/buttontutorart"
+                            android:layout_width="140dp"
+                            android:layout_height="100dp"
+                            android:layout_margin="5dp"
+                            android:layout_marginBottom="4dp"
+                            android:adjustViewBounds="true"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/art"></ImageButton>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+
+                            android:text="Art"
+                            android:textColor="#0E1843"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+            <ImageView
+                android:id="@+id/bgapp"
+                android:layout_width="526dp"
+                android:layout_height="750dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/bgapp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.923"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:orientation="horizontal">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/imagesslider"
+            app:itemIconTint="@drawable/selector1"
+            app:itemTextColor="@drawable/selector1"
+
+            app:menu="@menu/bottom_navigation" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

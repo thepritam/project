@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PayAmount">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/ubuntu_medium"
+        android:id="@+id/amount_text"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+
+        android:text="Amount to be Paid :"
+
+        android:textColor="#4CAF50"
+
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:fontFamily="@font/ubuntu_medium"
+        android:layout_below="@id/amount_text"
+        android:id="@+id/tobepaid"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+
+
+        android:visibility="gone"
+        android:textColor="#303F9F"
+
+        android:textSize="50sp" />
+
+</RelativeLayout>

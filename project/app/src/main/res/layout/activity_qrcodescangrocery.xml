@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:fillViewport="true"
+    tools:context=".grocery.Qrcodescangrocery">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".grocery.Qrcodescangrocery">
+
+    <TextView
+        android:layout_width="394dp"
+        android:layout_height="146dp"
+        android:gravity="center"
+        android:text="SHOW THIS TO RIDER TO SCAN THE QR CODE"
+        android:textColor="#FF0000"
+        android:textSize="36sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="155dp"
+        android:background="@android:color/black"
+        android:id="@+id/view" />
+    <LinearLayout
+        android:id="@+id/qrimage"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/view">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/image"/>
+
+
+
+    </LinearLayout>
+
+
+    <Button
+
+        android:id="@+id/reached"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/qrimage"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/bg_btn_grocery"
+        android:text="Reached"
+
+        ></Button>
+
+</RelativeLayout>
+</ScrollView>

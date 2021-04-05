@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/grad_bg"
+    tools:context=".tutor.tutorActivity">
+
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                >
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="180dp"
+                  android:layout_marginTop="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:background="@drawable/tutor1"
+                  ></LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="155dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtVw"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="50dp"
+                        android:shadowColor="@android:color/black"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="50"
+                        android:text="Select Class:"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:textStyle="bold|italic" />
+
+                    <Spinner
+                        android:id="@+id/spinner1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/txtVw"
+                        android:layout_marginLeft="53dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/txtVw"
+                        android:textAlignment="center" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/spinnerslayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="185dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtV1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="50dp"
+                        android:shadowColor="@android:color/black"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="50"
+                        android:text="Select Board:"
+                        android:textColor="#000"
+                        android:textSize="22dp"
+                        android:textStyle="bold|italic" />
+
+                    <Spinner
+                        android:id="@+id/spinner2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/txtV1"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_toRightOf="@+id/txtV1"
+                        android:textAlignment="center" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/spinnerslayout"
+                    android:layout_marginLeft="10dp"
+
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:gravity="center_horizontal"
+                        android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/editextstream"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:hint="please enter the stream"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:visibility="visible">
+
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/add_confirm"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|center_horizontal"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/bg_et"
+                        android:paddingLeft="5dp"
+                        android:text="Confirm"
+                        android:textSize="12sp"
+                        android:layout_marginTop="8dp"
+                        android:textColor="#000">
+
+                    </Button>
+                        </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:id="@+id/editextsubject"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:hint="please enter the Subjects"
+                        android:textColor="#000"
+                        android:textSize="14sp"
+                        android:visibility="visible">
+
+                    </EditText>
+
+                    <Button
+                        android:id="@+id/add_confirm_subject"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center|center_horizontal"
+                        android:layout_marginLeft="35dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/bg_et"
+                        android:paddingLeft="5dp"
+                        android:text="Confirm"
+                        android:layout_marginTop="7dp"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="#000">
+
+                    </Button>
+                </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/button_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_below="@+id/linear_layout"
+
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/add_field_button"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/bg_et"
+                        android:onClick="onAddField"
+                        android:paddingLeft="5dp"
+                        android:shadowColor="#172C1709"
+                        android:shadowDx="0"
+                        android:shadowDy="0"
+                        android:shadowRadius="50"
+                        android:text="Add Subject"
+                        android:textColor="#000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/parent_linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_below="@+id/button_layout"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:orientation="horizontal">
+
+                        <Spinner
+                            android:id="@+id/spinnerdynamic"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5"
+                            android:inputType="text" />
+
+                        <Button
+                            android:id="@+id/delete_button"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="@android:drawable/ic_delete"
+                            android:onClick="onDelete" />
+
+                        <Button
+                            android:id="@+id/select_button"
+                            android:layout_width="0dp"
+                            android:layout_height="40dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/correctimage"
+                            android:onClick="onSelect" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/linear_layout_button_confirm"
+                    android:gravity="center"
+                    android:layout_marginBottom="25dp"
+                    android:layout_below="@+id/parent_linear_layout">
+
+                    <Button
+                        android:id="@+id/button_tutor_confirm"
+
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/bg_et"
+                        android:enabled="false"
+                        android:text="Confirm"
+                        android:textColor="@drawable/md_deep_orange_A700" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+    <LinearLayout
+        android:id="@+id/bottomnavshimmer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/navigation"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+
+            android:background="@drawable/imagesslider"
+            app:itemIconTint="@drawable/selector1"
+            app:itemTextColor="@drawable/selector1"
+
+            app:menu="@menu/bottom_navigation" />
+    </LinearLayout>
+
+
+</RelativeLayout>

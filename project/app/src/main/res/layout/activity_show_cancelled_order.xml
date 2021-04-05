@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:fillViewport="true"
+    tools:context=".grocery.ShowCompletedOrder">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".grocery.ShowCompletedOrder">
+
+        <ImageView
+            android:id="@+id/groceryshopimage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/grocery"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            ></ImageView>
+
+
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:fontFamily="@font/ubuntu_medium"
+            android:id="@+id/congrats"
+            android:layout_below="@+id/groceryshopimage"
+            android:text="Oops Your Order has been cancelled"
+            android:textColor="#E91E63"
+
+            android:textSize="16sp" />
+
+
+
+        <TableLayout
+            android:id="@+id/tableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_below="@+id/congrats"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:paddingLeft="5dip"
+                    android:text="NAME"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/groceryshopname"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:padding="3dip"
+                    android:textColor="#03A9F4"
+                    android:textSize="16sp" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="25dp"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center"
+                    android:padding="3dip"
+                    android:paddingLeft="5dip"
+                    android:text="OrderId"
+                    android:textColor="#000"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/groceryshoporderid"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:gravity="center"
+                    android:inputType="textMultiLine"
+                    android:padding="3dip"
+                    android:textColor="#009688"
+                    android:textSize="16sp" />
+            </TableRow>
+
+
+
+
+
+
+
+
+
+
+        </TableLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/quotationimage"
+            android:orientation="vertical"
+            android:layout_below="@+id/tableLayout"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:id="@+id/quotationtext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/almendra_sc"
+                android:gravity="center_horizontal"
+                android:text="This is Your Quotation"
+                android:textColor="#000"></TextView>
+            <ImageView
+                android:id="@+id/groceryshopquotation"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                android:background="@drawable/grocery"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+
+                android:layout_marginTop="15dp"
+                android:visibility="gone"
+                ></ImageView>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/displayitemslayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/quotationimage"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center">
+
+            <TableRow
+                android:id="@+id/tableRow"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:weightSum="1">
+
+                <TextView
+                    android:id="@+id/product"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.33"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center"
+                    android:text="Product"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.33"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center"
+                    android:text="Quantity"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.33"
+                    android:fontFamily="@font/almendra_sc"
+                    android:gravity="center"
+                    android:text="Price"
+                    android:textColor="#000"
+                    android:textSize="18sp" />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <RelativeLayout
+            android:id="@+id/main_screen"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="200dp" android:layout_below="@+id/displayitemslayout">
+
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/ubuntu_medium"
+                android:text="Payment Status - Not done"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:textColor="#E91E63"
+                android:textSize="16sp" />
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </RelativeLayout>
+</ScrollView>

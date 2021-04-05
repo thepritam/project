@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:layout_weight="1"
+    android:fillViewport="true"
+    tools:context=".OTPActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_bg">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="38dp"
+            android:fontFamily="@font/ubuntu_medium"
+            android:text="VERIFICATION"
+            android:textColor="#000000"
+            android:textSize="28sp"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:textSize="36sp" />
+
+        <EditText
+            android:id="@+id/verification_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="155dp"
+            android:layout_marginEnd="32dp"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:hint="Verification ID"
+            android:inputType="phone"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/resend_btn"
+            android:layout_width="127dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="120dp"
+            android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+            android:drawableStart="@drawable/ic_menu_send"
+            android:text="Resend"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/verify_btn"
+            app:layout_constraintTop_toBottomOf="@+id/verification_number" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="70dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="7dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logoseparate" />
+
+        <ImageView
+            android:id="@+id/verify_btn"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="9dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.897"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/verification_number"
+            app:srcCompat="@drawable/gobutton" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

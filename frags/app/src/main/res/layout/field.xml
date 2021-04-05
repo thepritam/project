@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Spinner
+        android:id="@+id/spinnerStream"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/common_google_signin_btn_icon_dark_normal_background"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@android:drawable/ic_delete"
+        android:gravity="center"
+        android:onClick="onDelete"
+        android:visibility="visible" />
+
+    <Button
+        android:id="@+id/select_button"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_check_black_24dp"
+        android:onClick="onSelect"
+        android:visibility="visible" />
+</TableRow>

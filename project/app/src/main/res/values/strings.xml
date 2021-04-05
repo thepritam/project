@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">project</string>
+    <string name="title_activity_map">MapActivity</string>
+    <string name="google_maps_api">AIzaSyA0P1atIVNPhrrSIbyvhvrQxHkgcO3gWvY</string>
+    <string name="ticker_text">seen</string>
+    <string name="notification_title">notification</string>
+    <string name="notification_message">you have a message</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="fcm_message">project</string>
+    <string-array name="planets_array">
+        <item>1 to 5</item>
+        <item>6 to 8</item>
+        <item>9 to 10</item>
+        <item>11 to 12</item>
+        <item>Graduate</item>
+        <item>Master</item>
+    </string-array>
+    <string name="idtable">10</string>
+    <string name="done">Done!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
